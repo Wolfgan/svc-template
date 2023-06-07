@@ -26,6 +26,7 @@ type Daemon struct {
 	storage *db.Storage
 }
 
+// New create new daemon instance.
 func New(log *zerolog.Logger, cfg *config.Config) *Daemon {
 	return &Daemon{
 		log: log,
