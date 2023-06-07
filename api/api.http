@@ -1,0 +1,25 @@
+### Root
+GET http://localhost:8080
+
+### registry
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "email": "john@doe.com",
+  "name": "John",
+  "password": "123"
+}
+
+### login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "john@doe.com",
+  "password": "123"
+}
+
+### get profile
+GET http://localhost:8080/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODUxNzI2MjAsInN1YiI6ImpvaG5AZG9lLmNvbSJ9.ZqdS45FVG4_Ktls5YFzWj0r09yy_qDuVner7qCFOsiE
